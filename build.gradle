@@ -1,0 +1,53 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.9.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+version = '0.0.1-SNAPSHOT'
+
+processResources.destinationDir = compileJava.destinationDir
+compileJava.dependsOn processResources
+
+jar {
+	baseName = 'SpringBootAngularJS-1'
+	version =  version
+}
+repositories {
+	mavenCentral()
+	mavenLocal()
+	maven { url "http://repo.spring.io/libs-snapshot" }
+	maven { url "http://repo.spring.io/milestone" }
+	maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-devtools")
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+	compile("org.springframework.boot:spring-boot-starter-parent:1.4.2.RELEASE")
+	compile("mysql:mysql-connector-java:5.1.6")
+	compile("org.springframework.boot:spring-boot-starter-data-jpa")
+	compile("org.springframework.boot:spring-boot-starter-web")
+	compile("org.webjars:angularjs:1.6.9")
+	compile("org.webjars:bootstrap:3.3.7")
+	testCompile("junit:junit")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.0'
+}
+
+idea.module.inheritOutputDirs = true

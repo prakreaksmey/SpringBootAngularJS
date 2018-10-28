@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>AngularJS</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+       
+      <script th:src="@{/main.js}"></script>
+      <link th:href="@{/main.css}" rel="stylesheet" />
+       
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+</head>
+      
+   <body ng-app="app" ng-controller="StudentController">
+   <center>
+ <div class="container">
+      <h3>
+       Student Management
+      </h3>
+      <form ng-submit="submitStudent()">
+         <table border="0">
+            <tr>
+               <td>Stu Id</td>
+               <td>{{studentForm.stuId}}</td>
+            </tr>
+            <tr>
+               <td>Stu Name</td>
+               <td><input type="text" ng-model="studentForm.stuName" /></td>
+            </tr>
+           <tr>
+               <td>Stu Sex</td>
+               <td><input type="text" ng-model="studentForm.stuSex" /></td>
+            </tr>
+           <tr>
+               <td>Address</td>
+               <td><input type="text" ng-model="studentForm.address" /></td>
+            </tr>
+          
+            <tr>
+               <td colspan="2">
+                  <input type="submit" value="Submit" class="blue-button" />
+               </td>
+            </tr>
+         </table>
+      </form>
+      <br/>
+      <a class="btn btn-primary" ng-click="createStudent()">Create Student</a>
+      <table border="1">
+         <tr>
+            <th>Emp Id</th>
+            <th>Emp No</th>
+            <th>Emp Name</th>
+             <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+         </tr>
+         <!-- $scope.students -->
+         <tr ng-repeat="student in students">
+            <td> {{ student.stuId }}</td>
+            <td> {{ student.stuName }}</td>
+            <td >{{ student.stuSex }}</td>
+            
+            <td >{{ student.address }}</td>
+           
+            
+            
+            <td>
+            <a ng-click="editStudent(student)" class="btn btn-warning">Edit</a>
+            </td>
+            <td>
+            <a ng-click="deleteStudent(student)" class="btn btn-danger">Delete</a>
+            </td>
+         </tr>
+      </table>
+       </div>
+       </center>
+   </body>
+</html>

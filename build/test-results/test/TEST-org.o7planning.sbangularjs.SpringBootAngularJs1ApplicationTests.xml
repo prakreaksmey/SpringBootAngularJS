@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-10-28T04:00:22" hostname="SMEY-PC" time="0.002">
+  <properties/>
+  <testcase name="contextLoads" classname="org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests" time="0.002">
+    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 49 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 64 more
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 71 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	... 77 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.&lt;init&gt;(Socket.java:434)
+	at java.net.Socket.&lt;init&gt;(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	... 98 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[11:00:10.289 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.323 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:00:10.338 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:00:10.364 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:00:10.388 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests], using SpringBootContextLoader
+11:00:10.396 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]: class path resource [org/o7planning/sbangularjs/SpringBootAngularJs1ApplicationTests-context.xml] does not exist
+11:00:10.396 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]: class path resource [org/o7planning/sbangularjs/SpringBootAngularJs1ApplicationTestsContext.groovy] does not exist
+11:00:10.397 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:00:10.399 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]: SpringBootAngularJs1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:00:10.469 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.485 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+11:00:10.486 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+11:00:10.487 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@1853690138 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_151\jre\bin, java.vm.version=25.151-b12, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\Web New Project\SpringBootAngularJS-1-master, java.runtime.version=1.8.0_151-b12, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\SMEY\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\SMEY\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl;., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\SMEY, user.timezone=Asia/Bangkok, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=windows-1252, java.specification.version=1.8, java.class.path=D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\test;D:\Web New Project\SpringBootAngularJS-1-master\build\resources\test;D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main;D:\Web New Project\SpringBootAngularJS-1-master\build\resources\main;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-devtools\1.5.9.RELEASE\8908280f33c65ffa21789020e7a37d46a798d445\spring-boot-devtools-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-thymeleaf\1.5.9.RELEASE\f1a07e590d7742b7c57367ba23a3c0eecb491d48\spring-boot-starter-thymeleaf-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.6\380ef5226de2c85ff3b38cbfefeea881c5fce09d\mysql-connector-java-5.1.6.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-jpa\1.5.9.RELEASE\8628320876aa12cc406216523effe954fbd354c0\spring-boot-starter-data-jpa-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\1.5.9.RELEASE\bda9733d5e6ba6d1a97deead1738713dc0631b3e\spring-boot-starter-web-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\angularjs\1.6.9\26a84df34ef1b7d1435bd513ba13846f161e2402\angularjs-1.6.9.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\bootstrap\3.3.7\d6aeba80236573ed585baa657dac2b951caa8e7e\bootstrap-3.3.7.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-test\1.5.9.RELEASE\b5adf6fbf53be00b7ae52f657d564122edbe5156\spring-boot-starter-test-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-aop\1.5.9.RELEASE\fab419df8d7a13968a51ebfcbcad7ef320d66184\spring-boot-starter-aop-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\1.5.9.RELEASE\6769ecea55e952afb64f17975638c5afd1e59ef3\spring-boot-starter-jdbc-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\1.5.9.RELEASE\6bfb34db2715ee86c6e2337fa145650588b4b1b3\spring-boot-starter-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test-autoconfigure\1.5.9.RELEASE\b428495e25b0531b2a977f51c5d29011c817b8ee\spring-boot-test-autoconfigure-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test\1.5.9.RELEASE\7e604d56325f04a8b89a280e647746fc69e5a21f\spring-boot-test-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\1.5.9.RELEASE\88dd18bdaf317ae40971573a051fd47265f2ed39\spring-boot-autoconfigure-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\1.5.9.RELEASE\f472cdf948288796fb31e0bb03f6e7b022b763a0\spring-boot-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.thymeleaf\thymeleaf-spring4\2.1.6.RELEASE\a18784dab5e9337a53ce3213b205f927217849f2\thymeleaf-spring4-2.1.6.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\nz.net.ultraq.thymeleaf\thymeleaf-layout-dialect\1.4.0\8d7810c069ed1534b9631fb1e85c35973546086\thymeleaf-layout-dialect-1.4.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-entitymanager\5.0.12.Final\302a526f5058290e9cbd719a5caf9f248d344719\hibernate-entitymanager-5.0.12.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.0.12.Final\e58bf1c660e6706d8e2cbb53bae110f574366102\hibernate-core-5.0.12.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\javax.transaction\javax.transaction-api\1.2\d81aff979d603edd90dcd8db2abc1f4ce6479e3e\javax.transaction-api-1.2.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-jpa\1.11.9.RELEASE\64c80f12361d5b74cf98a3433b59a5c961d78d38\spring-data-jpa-1.11.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aspects\4.3.13.RELEASE\c91788e6b7c431379d0f7fe5f85f427d7e3f01ae\spring-aspects-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\1.5.9.RELEASE\4615056f8a2bcad03ba8cdf410419ee3d101c5bb\spring-boot-starter-tomcat-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-validator\5.3.6.Final\4c730be8bf55a8e9a61e79a2f2c079abf48b718\hibernate-validator-5.3.6.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.8.10\f7b83cb2bc4b88d53961e749e1ad32f49ef017b7\jackson-databind-2.8.10.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\4.3.13.RELEASE\87a095c7a1d13fe433ae6712787238c1dbaa6919\spring-webmvc-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\4.3.13.RELEASE\7cd084992d546165ede3e99bc31ee49c937f0ce7\spring-web-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\jquery\1.11.1\195eda53ac8beba7bff08f9919b48c954c858590\jquery-1.11.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\1.10.19\e8546f5bef4e061d8dd73895b4e8f40e3fe6effe\mockito-core-1.10.19.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.2.0\22290d17944bd239fabf5ac69005a60a7ecbbbcb\json-path-2.2.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.assertj\assertj-core\2.6.0\b532c3fc4f66bcfee4989a3514f1cd56203a33ad\assertj-core-2.6.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.skyscreamer\jsonassert\1.4.0\9cdbb373a06f6513e51e8c545ee6a5e981463edb\jsonassert-1.4.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-test\4.3.13.RELEASE\f4ff71b0d628d37f334d4f1f197c1b8cea364d01\spring-test-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\4.3.13.RELEASE\6ab1c189a13182fa3256f6bbc68fafdaf8f5a19e\spring-context-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\4.3.13.RELEASE\61f427b55951f59b50f3c2bd0de3c48960e2a342\spring-aop-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-orm\4.3.13.RELEASE\382d3ce044204947f8f2b3fa67a665d4e2bd346f\spring-orm-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jdbc\4.3.13.RELEASE\68e95c2a065641559c7dab7b605bc5847ab026ad\spring-jdbc-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\1.13.9.RELEASE\3910a598235d2e9c1ca56f34c5e62bb5ce23778\spring-data-commons-1.13.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\4.3.13.RELEASE\6ebf7b3f2099fa884038d9d7bd44817ebd9c5b4a\spring-tx-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\4.3.13.RELEASE\8613a7077722f1d97f8cb3fea4b0b40bfadf4496\spring-beans-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\4.3.13.RELEASE\da22bf7df1262e429b49653be6cd5b89b6affe5e\spring-expression-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\4.3.13.RELEASE\eea18d7f4d01f1baa1b6728b678b5a6fe23c61f6\spring-core-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\1.5.9.RELEASE\30fd62a1ce9639759d90d49608501082314c1628\spring-boot-starter-logging-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.17\7a27ea250c5130b2922b86dea63cbb1cc10a660c\snakeyaml-1.17.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.thymeleaf\thymeleaf\2.1.6.RELEASE\c362b4ecbeddc86a0cb7e767a88ce27e9c8147e6\thymeleaf-2.1.6.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\jcl-over-slf4j\1.7.25\f8c32b13ff142a513eeb5b6330b1588dcb2c0461\jcl-over-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.1.11\ccedfbacef4a6515d2983e3f89ed753d5d4fb665\logback-classic-1.1.11.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\log4j-over-slf4j\1.7.25\a87bb47468f47ee7aabbd54f93e133d4215769c3\log4j-over-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.codehaus.groovy\groovy\2.4.13\de7b73bed517fa1323aab391b719b59c3702391a\groovy-2.4.13.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.aspectj\aspectjweaver\1.8.13\ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b\aspectjweaver-1.8.13.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-jdbc\8.5.23\6036400a8f2d90dd3ae3a4d09e5136c56002887b\tomcat-jdbc-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.1.Final\71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.1.Final\c46217ab74b532568c0ed31dc599db3048bd1b67\jboss-logging-3.3.1.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\5e731d961297e5a07290bfaf3db1fbc8bbbf405a\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.21.0-GA\598244f595db5c5fb713731eddbb1c91a58d959b\javassist-3.21.0-GA.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.0.Final\3e899258936f94649c777193e1be846387ed54b3\jandex-2.0.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\8.5.23\52f07abcae10dc7e1764304b0877def175c2c833\tomcat-embed-websocket-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\8.5.23\79261793a47f507890ee08f749b9d81774e4f7f0\tomcat-embed-core-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\8.5.23\98d979cde444dffa6d434c8377d0123b2dfa614c\tomcat-embed-el-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\1.1.0.Final\8613ae82954779d518631e05daa73a6a954817d5\validation-api-1.1.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.8.0\45b426f7796b741035581a176744d91090e2e6fb\jackson-annotations-2.8.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.8.10\eb21a035c66ad307e66ec8fce37f5d50fd62d039\jackson-core-2.8.10.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.2.1\5b9e5df7a62d1279b70dc882b041d249c4f0b002\json-smart-2.2.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.1\87c0ea803b69252868d09308b4618f766f135a96\objenesis-2.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.vaadin.external.google\android-json\0.0.20131108.vaadin1\fa26d351fe62a6a17f5cda1287c1c6110dec413f\android-json-0.0.20131108.vaadin1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ognl\ognl\3.0.8\37e1aebfde7eb7baebc9ad4f85116ef9009c5fc5\ognl-3.0.8.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.unbescape\unbescape\1.1.0.RELEASE\ab0db4fe0a6fa89fb8da2a40008a4e63a7f3f5b9\unbescape-1.1.0.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-juli\8.5.23\98e7f0610b7b2fb8303f11be0210e3f5a56a7d55\tomcat-juli-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-annotations-api\8.5.23\aaf17df9fe0240e9e9d5375d24d5f177174b73d9\tomcat-annotations-api-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.1\a527213f2fea112a04c9bdf0ec0264e34104cd08\accessors-smart-1.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.1.11\88b8df40340eed549fb07e2613879bf6b006704d\logback-core-1.1.11.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.3\dcc2193db20e19e1feca8b1240dbbc4e190824fa\asm-5.0.3.jar, user.name=SMEY, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2', java.home=C:\Program Files\Java\jdk1.8.0_151\jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_151, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes, java.vendor=Oracle Corporation, org.gradle.test.worker=2, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1426272793 {name='systemEnvironment', properties={GOOGLE_DEFAULT_CLIENT_ID=no, PATH=C:\Users\SMEY\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl, PKG_CONFIG_PATH=C:\Program Files (x86)\Git\mingw32\lib\pkgconfig;C:\Program Files (x86)\Git\mingw32\share\pkgconfig, MSYSTEM_PREFIX=C:/Program Files (x86)/Git/mingw32, PROCESSOR_LEVEL=6, SYSTEMDRIVE=C:, CONFIG_SITE=C:/Program Files (x86)/Git/mingw32/etc/config.site, FP_NO_HOST_CHECK=NO, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, GOOGLE_DEFAULT_CLIENT_SECRET=no, MSYSTEM_CHOST=i686-w64-mingw32, PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, ORIGINAL_TEMP=C:/Users/SMEY/AppData/Local/Temp, PROGRAMFILES=C:\Program Files, USERNAME=SMEY, PWD=D:/Web New Project/SpringBootAngularJS-1-master, ProgramFiles(x86)=C:\Program Files (x86), INFOPATH=C:\Program Files (x86)\Git\usr\local\info;C:\Program Files (x86)\Git\usr\share\info;C:\Program Files (x86)\Git\usr\info;C:\Program Files (x86)\Git\share\info, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, SHELL=C:\Program Files (x86)\Git\usr\bin\bash.exe, ORIGINAL_TMP=C:/Users/SMEY/AppData/Local/Temp, OLDPWD=D:/Web New Project/gradle/gradle-4.8, TMPDIR=C:\Users\SMEY\AppData\Local\Temp, WINDIR=C:\Windows, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, SSH_ASKPASS=C:/Program Files (x86)/Git/mingw32/libexec/git-core/git-gui--askpass, HOMEPATH=\Users\SMEY, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel, M2_HOME=D:\javaee\apache-maven-3.5.2, PUBLIC=C:\Users\Public, MINGW_CHOST=i686-w64-mingw32, =::=::\, EXEPATH=C:\Program Files (x86)\Git, SHLVL=1, LOCALAPPDATA=C:\Users\SMEY\AppData\Local, ORIGINAL_PATH=C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm, MANPATH=C:\Program Files (x86)\Git\mingw32\share\man;C:\Program Files (x86)\Git\usr\local\man;C:\Program Files (x86)\Git\usr\share\man;C:\Program Files (x86)\Git\usr\man;C:\Program Files (x86)\Git\share\man, MINGW_PACKAGE_PREFIX=mingw-w64-i686, USERDOMAIN=SMEY-PC, LOGONSERVER=\\SMEY-PC, JAVA_HOME=C:\Program Files\Java\jdk1.8.0_151, PLINK_PROTOCOL=ssh, TERM=xterm, LANG=en_US.UTF-8, GRADLE_HOME=D:\Web New Project\gradle\gradle-4.8, MINGW_PREFIX=C:/Program Files (x86)/Git/mingw32, DISPLAY=needs-to-be-defined, MSYSTEM=MINGW32, APPDATA=C:\Users\SMEY\AppData\Roaming, SYSTEMROOT=C:\Windows, windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log, GOOGLE_API_KEY=no, OS=Windows_NT, windows_tracing_flags=3, COMPUTERNAME=SMEY-PC, COMMONPROGRAMFILES=C:\Program Files\Common Files, COMSPEC=C:\Windows\system32\cmd.exe, PROCESSOR_REVISION=2502, CommonProgramW6432=C:\Program Files\Common Files, ACLOCAL_PATH=C:\Program Files (x86)\Git\mingw32\share\aclocal;C:\Program Files (x86)\Git\usr\share\aclocal, MSYSTEM_CARCH=i686, TEMP=C:\Users\SMEY\AppData\Local\Temp, HOSTNAME=SMEY-PC, HOMEDRIVE=C:, USERPROFILE=C:\Users\SMEY, TMP=C:\Users\SMEY\AppData\Local\Temp, VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=4, HOME=C:\Users\SMEY}}]
+11:00:10.512 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [org/o7planning/sbangularjs/] to resources [URL [file:/D:/Web%20New%20Project/SpringBootAngularJS-1-master/build/classes/java/test/org/o7planning/sbangularjs/], URL [file:/D:/Web%20New%20Project/SpringBootAngularJS-1-master/build/classes/java/main/org/o7planning/sbangularjs/]]
+11:00:10.513 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\test\org\o7planning\sbangularjs]
+11:00:10.514 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\test\org\o7planning\sbangularjs] for files matching pattern [D:/Web New Project/SpringBootAngularJS-1-master/build/classes/java/test/org/o7planning/sbangularjs/*.class]
+11:00:10.518 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main\org\o7planning\sbangularjs]
+11:00:10.519 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main\org\o7planning\sbangularjs] for files matching pattern [D:/Web New Project/SpringBootAngularJS-1-master/build/classes/java/main/org/o7planning/sbangularjs/*.class]
+11:00:10.521 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:org/o7planning/sbangularjs/*.class] to resources [file [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\test\org\o7planning\sbangularjs\SpringBootAngularJs1ApplicationTests.class], file [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main\org\o7planning\sbangularjs\SpringBootAngularJs1Application.class]]
+11:00:10.590 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main\org\o7planning\sbangularjs\SpringBootAngularJs1Application.class]
+11:00:10.592 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.o7planning.sbangularjs.SpringBootAngularJs1Application for test class org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests
+11:00:10.599 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]: using defaults.
+11:00:10.606 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:00:10.638 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14002de4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@23fe077, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@79fe2057, org.springframework.test.context.support.DirtiesContextTestExecutionListener@69ddbd56, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ca7d284, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@166b93f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@912cddc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@da1f6a5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4fd02667, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7bcbd1e3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@64288f6b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@66be5995]
+11:00:10.642 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.643 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.644 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.645 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.651 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@67cca1d8 testClass = SpringBootAngularJs1ApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@331c69c8 testClass = SpringBootAngularJs1ApplicationTests, locations = '{}', classes = '{class org.o7planning.sbangularjs.SpringBootAngularJs1Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60c20fd9, org.springframework.boot.test.context.SpringBootTestContextCustomizer@7274f0eb, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1d4a610, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6717035e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+11:00:10.653 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.653 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests]
+11:00:10.777 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+11:00:10.777 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+11:00:10.778 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@187583355 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_151\jre\bin, java.vm.version=25.151-b12, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\Web New Project\SpringBootAngularJS-1-master, java.runtime.version=1.8.0_151-b12, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\SMEY\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\SMEY\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl;., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\SMEY, user.timezone=Asia/Bangkok, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=windows-1252, java.specification.version=1.8, java.class.path=D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\test;D:\Web New Project\SpringBootAngularJS-1-master\build\resources\test;D:\Web New Project\SpringBootAngularJS-1-master\build\classes\java\main;D:\Web New Project\SpringBootAngularJS-1-master\build\resources\main;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-devtools\1.5.9.RELEASE\8908280f33c65ffa21789020e7a37d46a798d445\spring-boot-devtools-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-thymeleaf\1.5.9.RELEASE\f1a07e590d7742b7c57367ba23a3c0eecb491d48\spring-boot-starter-thymeleaf-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.6\380ef5226de2c85ff3b38cbfefeea881c5fce09d\mysql-connector-java-5.1.6.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-jpa\1.5.9.RELEASE\8628320876aa12cc406216523effe954fbd354c0\spring-boot-starter-data-jpa-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\1.5.9.RELEASE\bda9733d5e6ba6d1a97deead1738713dc0631b3e\spring-boot-starter-web-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\angularjs\1.6.9\26a84df34ef1b7d1435bd513ba13846f161e2402\angularjs-1.6.9.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\bootstrap\3.3.7\d6aeba80236573ed585baa657dac2b951caa8e7e\bootstrap-3.3.7.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-test\1.5.9.RELEASE\b5adf6fbf53be00b7ae52f657d564122edbe5156\spring-boot-starter-test-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-aop\1.5.9.RELEASE\fab419df8d7a13968a51ebfcbcad7ef320d66184\spring-boot-starter-aop-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\1.5.9.RELEASE\6769ecea55e952afb64f17975638c5afd1e59ef3\spring-boot-starter-jdbc-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\1.5.9.RELEASE\6bfb34db2715ee86c6e2337fa145650588b4b1b3\spring-boot-starter-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test-autoconfigure\1.5.9.RELEASE\b428495e25b0531b2a977f51c5d29011c817b8ee\spring-boot-test-autoconfigure-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test\1.5.9.RELEASE\7e604d56325f04a8b89a280e647746fc69e5a21f\spring-boot-test-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\1.5.9.RELEASE\88dd18bdaf317ae40971573a051fd47265f2ed39\spring-boot-autoconfigure-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\1.5.9.RELEASE\f472cdf948288796fb31e0bb03f6e7b022b763a0\spring-boot-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.thymeleaf\thymeleaf-spring4\2.1.6.RELEASE\a18784dab5e9337a53ce3213b205f927217849f2\thymeleaf-spring4-2.1.6.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\nz.net.ultraq.thymeleaf\thymeleaf-layout-dialect\1.4.0\8d7810c069ed1534b9631fb1e85c35973546086\thymeleaf-layout-dialect-1.4.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-entitymanager\5.0.12.Final\302a526f5058290e9cbd719a5caf9f248d344719\hibernate-entitymanager-5.0.12.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.0.12.Final\e58bf1c660e6706d8e2cbb53bae110f574366102\hibernate-core-5.0.12.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\javax.transaction\javax.transaction-api\1.2\d81aff979d603edd90dcd8db2abc1f4ce6479e3e\javax.transaction-api-1.2.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-jpa\1.11.9.RELEASE\64c80f12361d5b74cf98a3433b59a5c961d78d38\spring-data-jpa-1.11.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aspects\4.3.13.RELEASE\c91788e6b7c431379d0f7fe5f85f427d7e3f01ae\spring-aspects-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\1.5.9.RELEASE\4615056f8a2bcad03ba8cdf410419ee3d101c5bb\spring-boot-starter-tomcat-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-validator\5.3.6.Final\4c730be8bf55a8e9a61e79a2f2c079abf48b718\hibernate-validator-5.3.6.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.8.10\f7b83cb2bc4b88d53961e749e1ad32f49ef017b7\jackson-databind-2.8.10.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\4.3.13.RELEASE\87a095c7a1d13fe433ae6712787238c1dbaa6919\spring-webmvc-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\4.3.13.RELEASE\7cd084992d546165ede3e99bc31ee49c937f0ce7\spring-web-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.webjars\jquery\1.11.1\195eda53ac8beba7bff08f9919b48c954c858590\jquery-1.11.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\1.10.19\e8546f5bef4e061d8dd73895b4e8f40e3fe6effe\mockito-core-1.10.19.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.2.0\22290d17944bd239fabf5ac69005a60a7ecbbbcb\json-path-2.2.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.assertj\assertj-core\2.6.0\b532c3fc4f66bcfee4989a3514f1cd56203a33ad\assertj-core-2.6.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.skyscreamer\jsonassert\1.4.0\9cdbb373a06f6513e51e8c545ee6a5e981463edb\jsonassert-1.4.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-test\4.3.13.RELEASE\f4ff71b0d628d37f334d4f1f197c1b8cea364d01\spring-test-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\4.3.13.RELEASE\6ab1c189a13182fa3256f6bbc68fafdaf8f5a19e\spring-context-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\4.3.13.RELEASE\61f427b55951f59b50f3c2bd0de3c48960e2a342\spring-aop-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-orm\4.3.13.RELEASE\382d3ce044204947f8f2b3fa67a665d4e2bd346f\spring-orm-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jdbc\4.3.13.RELEASE\68e95c2a065641559c7dab7b605bc5847ab026ad\spring-jdbc-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\1.13.9.RELEASE\3910a598235d2e9c1ca56f34c5e62bb5ce23778\spring-data-commons-1.13.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\4.3.13.RELEASE\6ebf7b3f2099fa884038d9d7bd44817ebd9c5b4a\spring-tx-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\4.3.13.RELEASE\8613a7077722f1d97f8cb3fea4b0b40bfadf4496\spring-beans-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\4.3.13.RELEASE\da22bf7df1262e429b49653be6cd5b89b6affe5e\spring-expression-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\4.3.13.RELEASE\eea18d7f4d01f1baa1b6728b678b5a6fe23c61f6\spring-core-4.3.13.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\1.5.9.RELEASE\30fd62a1ce9639759d90d49608501082314c1628\spring-boot-starter-logging-1.5.9.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.17\7a27ea250c5130b2922b86dea63cbb1cc10a660c\snakeyaml-1.17.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.thymeleaf\thymeleaf\2.1.6.RELEASE\c362b4ecbeddc86a0cb7e767a88ce27e9c8147e6\thymeleaf-2.1.6.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\jcl-over-slf4j\1.7.25\f8c32b13ff142a513eeb5b6330b1588dcb2c0461\jcl-over-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.1.11\ccedfbacef4a6515d2983e3f89ed753d5d4fb665\logback-classic-1.1.11.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\log4j-over-slf4j\1.7.25\a87bb47468f47ee7aabbd54f93e133d4215769c3\log4j-over-slf4j-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.codehaus.groovy\groovy\2.4.13\de7b73bed517fa1323aab391b719b59c3702391a\groovy-2.4.13.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.aspectj\aspectjweaver\1.8.13\ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b\aspectjweaver-1.8.13.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-jdbc\8.5.23\6036400a8f2d90dd3ae3a4d09e5136c56002887b\tomcat-jdbc-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.1.Final\71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.1.Final\c46217ab74b532568c0ed31dc599db3048bd1b67\jboss-logging-3.3.1.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\5e731d961297e5a07290bfaf3db1fbc8bbbf405a\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.21.0-GA\598244f595db5c5fb713731eddbb1c91a58d959b\javassist-3.21.0-GA.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.0.Final\3e899258936f94649c777193e1be846387ed54b3\jandex-2.0.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\8.5.23\52f07abcae10dc7e1764304b0877def175c2c833\tomcat-embed-websocket-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\8.5.23\79261793a47f507890ee08f749b9d81774e4f7f0\tomcat-embed-core-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\8.5.23\98d979cde444dffa6d434c8377d0123b2dfa614c\tomcat-embed-el-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\1.1.0.Final\8613ae82954779d518631e05daa73a6a954817d5\validation-api-1.1.0.Final.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.8.0\45b426f7796b741035581a176744d91090e2e6fb\jackson-annotations-2.8.0.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.8.10\eb21a035c66ad307e66ec8fce37f5d50fd62d039\jackson-core-2.8.10.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.2.1\5b9e5df7a62d1279b70dc882b041d249c4f0b002\json-smart-2.2.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.1\87c0ea803b69252868d09308b4618f766f135a96\objenesis-2.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\com.vaadin.external.google\android-json\0.0.20131108.vaadin1\fa26d351fe62a6a17f5cda1287c1c6110dec413f\android-json-0.0.20131108.vaadin1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ognl\ognl\3.0.8\37e1aebfde7eb7baebc9ad4f85116ef9009c5fc5\ognl-3.0.8.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.unbescape\unbescape\1.1.0.RELEASE\ab0db4fe0a6fa89fb8da2a40008a4e63a7f3f5b9\unbescape-1.1.0.RELEASE.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-juli\8.5.23\98e7f0610b7b2fb8303f11be0210e3f5a56a7d55\tomcat-juli-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-annotations-api\8.5.23\aaf17df9fe0240e9e9d5375d24d5f177174b73d9\tomcat-annotations-api-8.5.23.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.1\a527213f2fea112a04c9bdf0ec0264e34104cd08\accessors-smart-1.1.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.1.11\88b8df40340eed549fb07e2613879bf6b006704d\logback-core-1.1.11.jar;C:\Users\SMEY\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.3\dcc2193db20e19e1feca8b1240dbbc4e190824fa\asm-5.0.3.jar, user.name=SMEY, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2', java.home=C:\Program Files\Java\jdk1.8.0_151\jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_151, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes, java.vendor=Oracle Corporation, org.gradle.test.worker=2, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1865376483 {name='systemEnvironment', properties={GOOGLE_DEFAULT_CLIENT_ID=no, PATH=C:\Users\SMEY\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl, PKG_CONFIG_PATH=C:\Program Files (x86)\Git\mingw32\lib\pkgconfig;C:\Program Files (x86)\Git\mingw32\share\pkgconfig, MSYSTEM_PREFIX=C:/Program Files (x86)/Git/mingw32, PROCESSOR_LEVEL=6, SYSTEMDRIVE=C:, CONFIG_SITE=C:/Program Files (x86)/Git/mingw32/etc/config.site, FP_NO_HOST_CHECK=NO, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, GOOGLE_DEFAULT_CLIENT_SECRET=no, MSYSTEM_CHOST=i686-w64-mingw32, PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, ORIGINAL_TEMP=C:/Users/SMEY/AppData/Local/Temp, PROGRAMFILES=C:\Program Files, USERNAME=SMEY, PWD=D:/Web New Project/SpringBootAngularJS-1-master, ProgramFiles(x86)=C:\Program Files (x86), INFOPATH=C:\Program Files (x86)\Git\usr\local\info;C:\Program Files (x86)\Git\usr\share\info;C:\Program Files (x86)\Git\usr\info;C:\Program Files (x86)\Git\share\info, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, SHELL=C:\Program Files (x86)\Git\usr\bin\bash.exe, ORIGINAL_TMP=C:/Users/SMEY/AppData/Local/Temp, OLDPWD=D:/Web New Project/gradle/gradle-4.8, TMPDIR=C:\Users\SMEY\AppData\Local\Temp, WINDIR=C:\Windows, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, SSH_ASKPASS=C:/Program Files (x86)/Git/mingw32/libexec/git-core/git-gui--askpass, HOMEPATH=\Users\SMEY, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel, M2_HOME=D:\javaee\apache-maven-3.5.2, PUBLIC=C:\Users\Public, MINGW_CHOST=i686-w64-mingw32, =::=::\, EXEPATH=C:\Program Files (x86)\Git, SHLVL=1, LOCALAPPDATA=C:\Users\SMEY\AppData\Local, ORIGINAL_PATH=C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\SMEY\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\bin;C:\Program Files\Java\jdk-9.0.1\bin;D:\javaee\apache-maven-3.5.2\bin\m32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\xampp\php;C:\composer;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\Web New Project\gradle\gradle-4.8\bin;C:\Program Files\nodejs;C:\Users\SMEY\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\SMEY\AppData\Local\GitHubDesktop\bin;D:\javaee\apache-maven-3.5.2\bin;D:\Web New Project\gradle\gradle-4.8\bin;C:\Users\SMEY\AppData\Roaming\npm, MANPATH=C:\Program Files (x86)\Git\mingw32\share\man;C:\Program Files (x86)\Git\usr\local\man;C:\Program Files (x86)\Git\usr\share\man;C:\Program Files (x86)\Git\usr\man;C:\Program Files (x86)\Git\share\man, MINGW_PACKAGE_PREFIX=mingw-w64-i686, USERDOMAIN=SMEY-PC, LOGONSERVER=\\SMEY-PC, JAVA_HOME=C:\Program Files\Java\jdk1.8.0_151, PLINK_PROTOCOL=ssh, TERM=xterm, LANG=en_US.UTF-8, GRADLE_HOME=D:\Web New Project\gradle\gradle-4.8, MINGW_PREFIX=C:/Program Files (x86)/Git/mingw32, DISPLAY=needs-to-be-defined, MSYSTEM=MINGW32, APPDATA=C:\Users\SMEY\AppData\Roaming, SYSTEMROOT=C:\Windows, windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log, GOOGLE_API_KEY=no, OS=Windows_NT, windows_tracing_flags=3, COMPUTERNAME=SMEY-PC, COMMONPROGRAMFILES=C:\Program Files\Common Files, COMSPEC=C:\Windows\system32\cmd.exe, PROCESSOR_REVISION=2502, CommonProgramW6432=C:\Program Files\Common Files, ACLOCAL_PATH=C:\Program Files (x86)\Git\mingw32\share\aclocal;C:\Program Files (x86)\Git\usr\share\aclocal, MSYSTEM_CARCH=i686, TEMP=C:\Users\SMEY\AppData\Local\Temp, HOSTNAME=SMEY-PC, HOMEDRIVE=C:, USERPROFILE=C:\Users\SMEY, TMP=C:\Users\SMEY\AppData\Local\Temp, VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=4, HOME=C:\Users\SMEY}}]
+11:00:10.784 [Test worker] DEBUG org.springframework.core.env.MutablePropertySources - Adding PropertySource 'inline' with highest search precedence
+11:00:10.790 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+11:00:10.791 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.9.RELEASE)
+
+2018-10-28 11:00:11.313  INFO 1388 --- [    Test worker] o.s.SpringBootAngularJs1ApplicationTests : Starting SpringBootAngularJs1ApplicationTests on SMEY-PC with PID 1388 (started by SMEY in D:\Web New Project\SpringBootAngularJS-1-master)
+2018-10-28 11:00:11.330  INFO 1388 --- [    Test worker] o.s.SpringBootAngularJs1ApplicationTests : No active profile set, falling back to default profiles: default
+2018-10-28 11:00:12.002  INFO 1388 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@225f5171: startup date [Sun Oct 28 11:00:11 ICT 2018]; root of context hierarchy
+2018-10-28 11:00:17.435 ERROR 1388 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d.CGLIB$jpaVendorAdapter$5(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d$$FastClassBySpringCGLIB$$681232de.invoke(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 130 common frames omitted
+
+2018-10-28 11:00:17.456  WARN 1388 --- [    Test worker] o.s.b.a.orm.jpa.DatabaseLookup           : Unable to determine jdbc url from datasource
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d.CGLIB$jpaVendorAdapter$5(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d$$FastClassBySpringCGLIB$$681232de.invoke(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c3e6e33d.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 109 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 110 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 130 common frames omitted
+
+2018-10-28 11:00:17.528  INFO 1388 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-28 11:00:17.554  INFO 1388 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-28 11:00:17.657  INFO 1388 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-10-28 11:00:17.660  INFO 1388 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-28 11:00:17.663  INFO 1388 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-10-28 11:00:17.723  INFO 1388 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-28 11:00:20.045 ERROR 1388 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) [hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) [hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 105 common frames omitted
+
+2018-10-28 11:00:20.051  WARN 1388 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+2018-10-28 11:00:20.090  INFO 1388 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-28 11:00:20.114  INFO 1388 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-10-28 11:00:20.729  INFO 1388 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-10-28 11:00:22.750 ERROR 1388 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) [hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) [spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 98 common frames omitted
+
+2018-10-28 11:00:22.755  WARN 1388 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2018-10-28 11:00:22.773  INFO 1388 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-28 11:00:22.782 ERROR 1388 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 64 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	... 71 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	... 77 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 98 common frames omitted
+
+2018-10-28 11:00:22.816 ERROR 1388 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@14002de4] to prepare test instance [org.o7planning.sbangularjs.SpringBootAngularJs1ApplicationTests@1d461199]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.8.jar:4.8]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.8.jar:4.8]
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-4.8.jar:4.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.8.jar:4.8]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.8.jar:4.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.8.jar:4.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 49 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 64 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	... 71 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	... 77 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_151]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_151]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_151]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 98 common frames omitted
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
