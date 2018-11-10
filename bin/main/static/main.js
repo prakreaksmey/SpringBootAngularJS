@@ -1,6 +1,31 @@
+	
+var app = angular.module('myApp', ['ui.grid','ui.grid.pagination']);
 
-var app = angular.module("app", []);
- 
+
+
+	app.service('StudentServicePagin',['$http', function ($http) {
+	
+	function getStudents(pageNumber,size) {
+		pageNumber = pageNumber > 0?pageNumber - 1:0;
+        return  $http({
+          method: 'GET',
+          url: 'student/get?page='+pageNumber+'&size='+size
+        });
+    }
+	
+    return {
+    	getStudents:getStudents
+    };
+	
+}]);
+	
+
+
+
+
+
+
+
 // Controller Part
 app.controller("StudentController", function($scope, $http) {
  
@@ -103,3 +128,61 @@ app.controller("StudentController", function($scope, $http) {
         $scope.studentForm.address = "";
     };
 });
+
+
+
+
+
+
+
+ app.controller('StudentCtrl', ['$scope','StudentServicePagin', function ($scope, StudentServicePagin) {
+        var paginationOptions = {
+            pageNumber: 1,
+            pageSize: 5,
+        sort: null
+        };
+ 
+    StudentServicePagin.getStudents(
+      paginationOptions.pageNumber,
+      paginationOptions.pageSize).success(function(data){
+        $scope.gridOptions.data = data.content;
+        $scope.gridOptions.totalItems = data.totalElements;
+      });
+ 
+    $scope.gridOptions = {
+        paginationPageSizes: [5, 10, 20],
+        paginationPageSize: paginationOptions.pageSize,
+        enableColumnMenus:false,
+    useExternalPagination: true,
+    
+        columnDefs: [
+           { name: 'Id' , field: 'stuId'},
+          
+           { name: 'Name' , field: 'stuName'},
+           { name: 'Sex' , field: 'stuSex'},
+           { name: 'Address', field: 'address' },
+             {name:'Edit',cellTemplate:'<div><a ng-click="editStudent(student)" class="edit-button">Edit</a></div>'}
+             
+            
+        ],
+        onRegisterApi: function(gridApi) {
+           $scope.gridApi = gridApi;
+           
+           gridApi.pagination.on.paginationChanged(
+             $scope, 
+             function (newPage, pageSize) {
+               paginationOptions.pageNumber = newPage;
+               paginationOptions.pageSize = pageSize;
+               StudentServicePagin.getStudents(newPage,pageSize)
+                 .success(function(data){
+                   $scope.gridOptions.data = data.content;
+                   $scope.gridOptions.totalItems = data.totalElements;
+                 });
+            });
+        }
+    };
+}]);
+	
+	
+
+	
